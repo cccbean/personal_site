@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" class="font-noto">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="public/img/favicon.svg" />
+		<link rel="stylesheet" href="output.css" />
+		<title>Christian Crespo | Fullstack Developer</title>
+	</head>
+	<body>
+		<!-- hero section -->
+		<div class="flex h-screen items-center bg-dark text-light" id="hero">
+			<h1 class="text-3xl">
+				<span class="text-5xl font-bold">Christian Crespo</span>
+				<br />Fullstack Developer
+			</h1>
+
+			<!-- img -->
+		</div>
+
+		<!-- navbar -->
+		<header class="sticky top-0 bg-dark text-light">
+			<nav class="flex items-center justify-between p-4">
+				<a href="">
+					<img class="logo" src="public/img/WhiteBeanLogo.svg" alt="logo" />
+				</a>
+				<ul class="flex gap-8 text-lg">
+          <!-- TODO: Fix the headings being blocked by the sticky navbar -->
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- about -->
+			<h2 class="py-8 text-center text-3xl" id="about">About</h2>
+			<div class="bg-dark text-light">
+				<div class="flex justify-around text-2xl">
+					<h3>Frontend Developer</h3>
+					<h3>Backend Developer</h3>
+				</div>
+				<div class="flex gap-4 p-4">
+					<p class="flex-1">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
+						necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias similique
+						totam soluta. Voluptatibus soluta recusandae provident quisquam doloremque esse?
+					</p>
+					<div class="flex-1">
+						<div>
+							Languages
+							<div>HTML</div>
+						</div>
+						<div>
+							Tools
+							<div>React</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- projects -->
+			<h2 class="py-8 text-center text-3xl" id="projects">Projects</h2>
+
+			<!-- salsa beats -->
+			<div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light">
+				<div class="h-96 w-96 flex-1 bg-light"></div>
+				<div class="flex-1">
+					<h3 class="text-2xl">Salsa Beats</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+						recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+						magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+					</p>
+					<button class="border-black block border p-4">Live Demo</button>
+					<button class="border-black block border p-4">Github</button>
+				</div>
+			</div>
+
+			<!-- restaurant pos -->
+			<div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light">
+				<div class="flex-1">
+					<h3 class="text-2xl">Restaurant POS</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+						recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+						magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+					</p>
+					<button class="border-black block border p-4">Live Demo</button>
+					<button class="border-black block border p-4">Github</button>
+				</div>
+				<div class="h-96 w-96 flex-1 bg-light"></div>
+			</div>
+
+			<!-- Odin book -->
+			<div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light">
+				<div class="h-96 w-96 flex-1 bg-light"></div>
+				<div class="flex-1">
+					<h3 class="text-2xl">Odin Book</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+						recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+						magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+					</p>
+					<button class="border-black block border p-4">Live Demo</button>
+					<button class="border-black block border p-4">Github</button>
+				</div>
+			</div>
+
+			<!-- Spanish Pronunciation -->
+			<div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light">
+				<div class="flex-1">
+					<h3 class="text-2xl">Spanish Pronunciation</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+						recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+						magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+					</p>
+					<button class="border-black block border p-4">Live Demo</button>
+					<button class="border-black block border p-4">Github</button>
+				</div>
+				<div class="h-96 w-96 flex-1 bg-light"></div>
+			</div>
+
+			<!-- contact -->
+			<h2 class="py-8 text-center text-3xl" id="contact">Contact</h2>
+			<div class="w-full bg-dark text-light">
+				<p>Interested in working together? Send me a message!</p>
+				<form class="flex gap-4" action="">
+					<div>
+						<div class="flex flex-col">
+							<label for=""> Name </label>
+							<input class="border" type="text" />
+						</div>
+						<div class="flex flex-col">
+							<label for=""> Email </label>
+							<input class="border" type="text" />
+						</div>
+					</div>
+
+					<div class="flex flex-col">
+						<label for=""> Message </label>
+						<input class="border" type="text" />
+					</div>
+				</form>
+			</div>
+
+      <div class="flex justify-center">
+        <a href="#hero">Back to top</a>
+      </div>
+		</main>
+
+		<!-- footer -->
+		<footer class="flex flex-col text-center">
+			<div>
+				<a href="">Git</a>
+				<a href="">Email</a>
+			</div>
+			Christian Crespo © 2024
+		</footer>
+	</body>
+</html>
