@@ -7,19 +7,23 @@
 		<link rel="stylesheet" href="output.css" />
 		<title>Christian Crespo | Fullstack Developer</title>
 	</head>
-	<body>
+	<body class="bg-light text-dark">
 		<!-- hero section -->
-		<div class="flex h-screen items-center bg-dark text-light" id="hero">
+		<div
+			class="grid h-screen grid-cols-[1fr_1fr] place-items-center border-b border-primary bg-dark text-light"
+			id="hero"
+		>
 			<h1 class="text-3xl">
 				<span class="text-5xl font-bold">Christian Crespo</span>
 				<br />Fullstack Developer
 			</h1>
 
 			<!-- img -->
+			<div class="aspect-square w-4 bg-light"></div>
 		</div>
 
 		<!-- navbar -->
-		<header class="bg-slate-500 sticky top-0 text-light">
+		<header class="sticky top-0 bg-dark text-light">
 			<nav class="flex items-center justify-between px-8 py-2">
 				<a href="#hero">
 					<img class="w-12" src="public/img/WhiteBeanLogo.svg" alt="logo" />
@@ -34,26 +38,29 @@
 
 		<!-- about -->
 		<section class="scroll-my-16" id="about">
-			<h2 class="py-16 text-center text-3xl font-bold">About</h2>
-			<div class="bg-dark text-light px-48 py-4">
-				<div class="flex justify-around text-2xl">
-					<h3>Frontend Developer</h3>
-					<h3>Backend Developer</h3>
-				</div>
-				<div class="flex gap-4 p-4">
-					<p class="flex-1">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
-						necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias similique
-						totam soluta. Voluptatibus soluta recusandae provident quisquam doloremque esse?
-					</p>
-					<div class="flex-1">
-						<div>
-							Languages
-							<div>HTML</div>
-						</div>
-						<div>
-							Tools
-							<div>React</div>
+			<h2 class="py-16 text-center text-3xl font-bold ">About</h2>
+			<div class="flex justify-center bg-dark py-8 text-light">
+				<div class="max-w-6xl">
+					<div class="flex justify-around text-2xl">
+						<h3>Frontend Developer</h3>
+						<h3>Backend Developer</h3>
+					</div>
+					<div class="flex gap-4 p-4">
+						<p class="flex-1">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
+							necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias
+							similique totam soluta. Voluptatibus soluta recusandae provident quisquam doloremque
+							esse?
+						</p>
+						<div class="flex-1">
+							<div>
+								Languages
+								<div>HTML</div>
+							</div>
+							<div>
+								Tools
+								<div>React</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -65,96 +72,114 @@
 			<h2 class="py-16 text-center text-3xl font-bold">Projects</h2>
 
 			<div class="flex flex-col gap-8">
-        <!-- salsa beats -->
-        <div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light px-48 py-4">
-          <div class="h-96 w-96 flex-1 bg-light"></div>
-          <div class="flex-1">
-            <h3 class="text-2xl">Salsa Beats</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
-              recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
-              magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
-            </p>
-            <button class="border-black block border p-4">Live Demo</button>
-            <button class="border-black block border p-4">Github</button>
+				<!-- salsa beats -->
+				<div class="flex justify-center bg-dark py-8 text-light">
+					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
+						<div class="h-96 w-96 flex-1 bg-light"></div>
+						<div class="flex-1">
+							<h3 class="text-2xl">Salsa Beats</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+							</p>
+							<button class="border-black block border p-4">Live Demo</button>
+							<button class="border-black block border p-4">Github</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- restaurant pos -->
+				<div class="flex justify-center bg-dark py-8 text-light">
+          <div
+            class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 max-w-6xl"
+          >
+            <div class="flex-1">
+              <h3 class="text-2xl">Restaurant POS</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+                recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+                magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+              </p>
+              <button class="border-black block border p-4">Live Demo</button>
+              <button class="border-black block border p-4">Github</button>
+            </div>
+            <div class="h-96 w-96 flex-1 bg-light"></div>
           </div>
         </div>
-        <!-- restaurant pos -->
-        <div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light px-48 py-4">
-          <div class="flex-1">
-            <h3 class="text-2xl">Restaurant POS</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
-              recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
-              magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
-            </p>
-            <button class="border-black block border p-4">Live Demo</button>
-            <button class="border-black block border p-4">Github</button>
-          </div>
-          <div class="h-96 w-96 flex-1 bg-light"></div>
-        </div>
-        <!-- Odin book -->
-        <div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light px-48 py-4">
-          <div class="h-96 w-96 flex-1 bg-light"></div>
-          <div class="flex-1">
-            <h3 class="text-2xl">Odin Book</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
-              recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
-              magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
-            </p>
-            <button class="border-black block border p-4">Live Demo</button>
-            <button class="border-black block border p-4">Github</button>
+
+				<!-- Odin book -->
+				<div class="flex justify-center bg-dark py-8 text-light">
+          <div
+            class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 max-w-6xl"
+          >
+            <div class="h-96 w-96 flex-1 bg-light"></div>
+            <div class="flex-1">
+              <h3 class="text-2xl">Odin Book</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+                recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+                magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+              </p>
+              <button class="border-black block border p-4">Live Demo</button>
+              <button class="border-black block border p-4">Github</button>
+            </div>
           </div>
         </div>
-        <!-- Spanish Pronunciation -->
-        <div class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 bg-dark text-light px-48 py-4">
-          <div class="flex-1">
-            <h3 class="text-2xl">Spanish Pronunciation</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
-              recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
-              magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
-            </p>
-            <button class="border-black block border p-4">Live Demo</button>
-            <button class="border-black block border p-4">Github</button>
+
+				<!-- Spanish Pronunciation -->
+				<div class="flex justify-center bg-dark py-8 text-light">
+          <div
+            class="grid grid-cols-[1fr_1fr] justify-items-center gap-4 max-w-6xl"
+          >
+            <div class="flex-1">
+              <h3 class="text-2xl">Spanish Pronunciation</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
+                recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
+                magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
+              </p>
+              <button class="border-black block border p-4">Live Demo</button>
+              <button class="border-black block border p-4">Github</button>
+            </div>
+            <div class="h-96 w-96 flex-1 bg-light"></div>
           </div>
-          <div class="h-96 w-96 flex-1 bg-light"></div>
         </div>
-      </div>
+			</div>
 		</section>
 
 		<!-- contact -->
 		<section class="scroll-my-16" id="contact">
 			<h2 class="py-16 text-center text-3xl font-bold">Contact</h2>
-			<div class="w-full bg-dark text-light px-48 py-4">
-				<p>Interested in working together? Send me a message!</p>
-				<form class="flex gap-4" action="">
-					<div>
-						<div class="flex flex-col">
-							<label for=""> Name </label>
-							<input class="border" type="text" />
-						</div>
-						<div class="flex flex-col">
-							<label for=""> Email </label>
-							<input class="border" type="text" />
-						</div>
-					</div>
-
-					<div class="flex flex-col">
-						<label for=""> Message </label>
-						<input class="border" type="text" />
-					</div>
-				</form>
-			</div>
-
-			<div class="flex justify-center">
-				<a href="#hero">Back to top</a>
-			</div>
+			<div class="flex justify-center bg-dark py-8 text-light">
+        <div class="max-w-6xl">
+          <p>Interested in working together? Send me a message!</p>
+          <form class="flex gap-4" action="">
+            <div>
+              <div class="flex flex-col">
+                <label for=""> Name </label>
+                <input class="border bg-light" type="text" />
+              </div>
+              <div class="flex flex-col">
+                <label for=""> Email </label>
+                <input class="border bg-light" type="text" />
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <label for=""> Message </label>
+              <input class="border bg-light" type="text" />
+            </div>
+          </form>
+        </div>
+      </div>
 		</section>
 
+    <div class="flex justify-center">
+      <a href="#hero">Back to top</a>
+    </div>
+
 		<!-- footer -->
-		<footer class="flex flex-col text-center">
+		<footer class="flex flex-col text-center bg-dark text-light">
 			<div>
 				<a href="">Git</a>
 				<a href="">Email</a>
