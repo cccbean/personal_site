@@ -7,23 +7,20 @@
 		<link rel="stylesheet" href="output.css" />
 		<title>Christian Crespo | Fullstack Developer</title>
 	</head>
-	<body class="bg-light text-dark">
+	<body class="bg-bg0 text-fg">
 		<!-- hero section -->
-		<div
-			class="grid h-screen grid-cols-[1fr_1fr] place-items-center border-b border-primary bg-dark text-light"
-			id="hero"
-		>
+		<div class="grid h-screen grid-cols-[1fr_1fr] place-items-center" id="hero">
 			<h1 class="text-3xl">
 				<span class="text-5xl font-bold">Christian Crespo</span>
 				<br />Fullstack Developer
 			</h1>
 
 			<!-- img -->
-			<div class="aspect-square w-4 bg-light"></div>
+			<div class="aspect-square w-4 bg-fg"></div>
 		</div>
 
 		<!-- navbar -->
-		<header class="sticky top-0 bg-dark text-light">
+		<header class="sticky top-0 bg-bg0">
 			<nav class="flex items-center justify-between px-8 py-2">
 				<a href="#hero">
 					<img class="w-12" src="public/img/WhiteBeanLogo.svg" alt="logo" />
@@ -39,18 +36,27 @@
 		<!-- about -->
 		<section class="scroll-my-16" id="about">
 			<h2 class="py-16 text-center text-3xl font-bold">About</h2>
-			<div class="flex justify-center bg-dark py-8 text-light">
+
+			<div class="flex justify-center py-8">
 				<div class="max-w-6xl">
-					<div class="flex justify-around text-2xl">
-						<h3>Frontend Developer</h3>
-						<h3>Backend Developer</h3>
+					<div class="group peer flex text-2xl" data-tab="f">
+						<!-- TODO: inverted border between tabs -->
+						<h3 class="group-data-[tab=f]:border-fg group-data-[tab=f]:border-t group-data-[tab=f]:border-l group-data-[tab=f]:border-r rounded-t-md flex-1 text-center py-2 relative cursor-pointer" id="f-tab">
+							Frontend Developer
+							<div class="hidden w-full h-1 absolute -bottom-1 bg-bg0 group-data-[tab=f]:block"></div>
+						</h3>
+						<h3 class="group-data-[tab=b]:border-fg group-data-[tab=b]:border-t group-data-[tab=b]:border-l group-data-[tab=b]:border-r rounded-t-md flex-1 text-center py-2 relative cursor-pointer" id="b-tab">
+							Backend Developer
+							<div class="hidden w-full h-1 absolute -bottom-1 bg-bg0 group-data-[tab=b]:block"></div>
+						</h3>
 					</div>
-					<div class="flex gap-4 p-4">
+
+					<div class="flex gap-4 p-4 border border-fg rounded-b-lg peer-data-[tab=f]:rounded-tr-lg peer-data-[tab=b]:rounded-tl-lg">
 						<p class="flex-1">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
 							necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias
-							similique totam soluta. Voluptatibus soluta recusandae provident quisquam doloremque
-							esse?
+							similique totam soluta. Voluptatibus soluta recusandae provibg_dimdent quisquam
+							doloremque esse?
 						</p>
 						<div class="flex-1">
 							<div>
@@ -73,9 +79,9 @@
 
 			<div class="flex flex-col gap-8">
 				<!-- salsa beats -->
-				<div class="flex justify-center bg-dark py-8 text-light">
+				<div class="flex justify-center py-8">
 					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="h-96 w-96 flex-1 bg-light"></div>
+						<div class="h-96 w-96 flex-1 bg-fg"></div>
 						<div class="flex flex-1 flex-col justify-around">
 							<h3 class="text-2xl">Salsa Beats</h3>
 							<p>
@@ -85,12 +91,12 @@
 							</p>
 							<div class="grid justify-start gap-2">
 								<button
-									class="rounded-full border-2 border-primary px-8 py-2 font-bold text-primary transition-all duration-100 ease-in hover:bg-primary hover:text-dark active:scale-95"
+									class="rounded-full border-2 border-fg px-8 py-2 font-bold transition-all duration-100 ease-in hover:bg-fg hover:text-bg0 active:scale-95"
 								>
 									Live Demo
 								</button>
 								<button
-									class="rounded-full border-2 border-light px-8 py-2 font-bold text-light transition-all duration-150 ease-in hover:bg-light hover:text-dark active:scale-95"
+									class="rounded-full border-2 border-fg px-8 py-2 font-bold transition-all duration-150 ease-in hover:bg-fg hover:text-bg0 active:scale-95"
 								>
 									Github
 								</button>
@@ -100,7 +106,7 @@
 				</div>
 
 				<!-- restaurant pos -->
-				<div class="flex justify-center bg-dark py-8 text-light">
+				<div class="flex justify-center py-8">
 					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
 						<div class="flex-1">
 							<h3 class="text-2xl">Restaurant POS</h3>
@@ -109,17 +115,17 @@
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="border-black block border p-4">Live Demo</button>
-							<button class="border-black block border p-4">Github</button>
+							<button class="block border border-black p-4">Live Demo</button>
+							<button class="block border border-black p-4">Github</button>
 						</div>
-						<div class="h-96 w-96 flex-1 bg-light"></div>
+						<div class="h-96 w-96 flex-1 bg-fg"></div>
 					</div>
 				</div>
 
 				<!-- Odin book -->
-				<div class="flex justify-center bg-dark py-8 text-light">
+				<div class="flex justify-center py-8">
 					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="h-96 w-96 flex-1 bg-light"></div>
+						<div class="h-96 w-96 flex-1 bg-fg"></div>
 						<div class="flex-1">
 							<h3 class="text-2xl">Odin Book</h3>
 							<p>
@@ -127,14 +133,14 @@
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="border-black block border p-4">Live Demo</button>
-							<button class="border-black block border p-4">Github</button>
+							<button class="block border border-black p-4">Live Demo</button>
+							<button class="block border border-black p-4">Github</button>
 						</div>
 					</div>
 				</div>
 
 				<!-- Spanish Pronunciation -->
-				<div class="flex justify-center bg-dark py-8 text-light">
+				<div class="flex justify-center py-8">
 					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
 						<div class="flex-1">
 							<h3 class="text-2xl">Spanish Pronunciation</h3>
@@ -143,10 +149,10 @@
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="border-black block border p-4">Live Demo</button>
-							<button class="border-black block border p-4">Github</button>
+							<button class="block border border-black p-4">Live Demo</button>
+							<button class="block border border-black p-4">Github</button>
 						</div>
-						<div class="h-96 w-96 flex-1 bg-light"></div>
+						<div class="h-96 w-96 flex-1 bg-fg"></div>
 					</div>
 				</div>
 			</div>
@@ -155,23 +161,24 @@
 		<!-- contact -->
 		<section class="scroll-my-16" id="contact">
 			<h2 class="py-16 text-center text-3xl font-bold">Contact</h2>
-			<div class="flex justify-center bg-dark py-8 text-light">
+
+			<div class="flex justify-center py-8">
 				<div class="max-w-6xl">
 					<p>Interested in working together? Send me a message!</p>
 					<form class="flex gap-4" action="">
 						<div>
 							<div class="flex flex-col">
 								<label for=""> Name </label>
-								<input class="border bg-light" type="text" />
+								<input class="border bg-fg" type="text" />
 							</div>
 							<div class="flex flex-col">
 								<label for=""> Email </label>
-								<input class="border bg-light" type="text" />
+								<input class="border bg-fg" type="text" />
 							</div>
 						</div>
 						<div class="flex flex-col">
 							<label for=""> Message </label>
-							<input class="border bg-light" type="text" />
+							<input class="border bg-fg" type="text" />
 						</div>
 					</form>
 				</div>
@@ -183,7 +190,7 @@
 		</div>
 
 		<!-- footer -->
-		<footer class="flex flex-col bg-dark text-center text-light">
+		<footer class="flex flex-col text-center">
 			<div>
 				<a href="">Git</a>
 				<a href="">Email</a>
@@ -191,4 +198,16 @@
 			Christian Crespo © 2024
 		</footer>
 	</body>
+
+	<script>
+		const frontendTab = document.getElementById("f-tab");
+		const backendTab = document.getElementById("b-tab");
+		const tablist = document.querySelector("[data-tab]");
+		frontendTab.addEventListener('click', () => {
+			tablist.dataset.tab = "f";
+		});
+		backendTab.addEventListener('click', () => {
+			tablist.dataset.tab = "b";
+		});
+	</script>
 </html>
