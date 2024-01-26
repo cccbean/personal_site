@@ -16,7 +16,7 @@
 			</h1>
 
 			<!-- img -->
-			<div class="aspect-square w-4 bg-fg"></div>
+			<div class="aspect-square w-24 bg-fg"></div>
 		</div>
 
 		<!-- navbar -->
@@ -40,18 +40,31 @@
 			<div class="flex justify-center py-8">
 				<div class="max-w-6xl">
 					<div class="group peer flex text-2xl" data-tab="f">
-						<!-- TODO: inverted border between tabs -->
-						<h3 class="group-data-[tab=f]:border-fg group-data-[tab=f]:border-t group-data-[tab=f]:border-l group-data-[tab=f]:border-r rounded-t-md flex-1 text-center py-2 relative cursor-pointer" id="f-tab">
+						<!-- TODO: change tabs from data attribute to radio buttons -->
+						<!-- TODO: change to bottom border -->
+						<h3
+							class="relative flex-1 cursor-pointer rounded-t-md py-4 text-center group-data-[tab=f]:border-l group-data-[tab=f]:border-r group-data-[tab=f]:border-t group-data-[tab=f]:border-fg"
+							id="f-tab"
+						>
 							Frontend Developer
-							<div class="hidden w-full h-1 absolute -bottom-1 bg-bg0 group-data-[tab=f]:block"></div>
+							<div
+								class="absolute -bottom-1 hidden h-1 w-full bg-bg0 group-data-[tab=f]:block"
+							></div>
 						</h3>
-						<h3 class="group-data-[tab=b]:border-fg group-data-[tab=b]:border-t group-data-[tab=b]:border-l group-data-[tab=b]:border-r rounded-t-md flex-1 text-center py-2 relative cursor-pointer" id="b-tab">
+						<h3
+							class="relative flex-1 cursor-pointer rounded-t-md py-4 text-center group-data-[tab=b]:border-l group-data-[tab=b]:border-r group-data-[tab=b]:border-t group-data-[tab=b]:border-fg"
+							id="b-tab"
+						>
 							Backend Developer
-							<div class="hidden w-full h-1 absolute -bottom-1 bg-bg0 group-data-[tab=b]:block"></div>
+							<div
+								class="absolute -bottom-1 hidden h-1 w-full bg-bg0 group-data-[tab=b]:block"
+							></div>
 						</h3>
 					</div>
 
-					<div class="flex gap-4 p-4 border border-fg rounded-b-lg peer-data-[tab=f]:rounded-tr-lg peer-data-[tab=b]:rounded-tl-lg">
+					<div
+						class="flex gap-4 rounded-b-lg border border-fg p-8 peer-data-[tab=b]:rounded-tl-lg peer-data-[tab=f]:rounded-tr-lg"
+					>
 						<p class="flex-1">
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
 							necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias
@@ -80,8 +93,8 @@
 			<div class="flex flex-col gap-8">
 				<!-- salsa beats -->
 				<div class="flex justify-center py-8">
-					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="h-96 w-96 flex-1 bg-fg"></div>
+					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-8">
+						<img class="border-fg border" src="./public/img/testScreenshot.png" alt="">
 						<div class="flex flex-1 flex-col justify-around">
 							<h3 class="text-2xl">Salsa Beats</h3>
 							<p>
@@ -91,12 +104,12 @@
 							</p>
 							<div class="grid justify-start gap-2">
 								<button
-									class="rounded-full border-2 border-fg px-8 py-2 font-bold transition-all duration-100 ease-in hover:bg-fg hover:text-bg0 active:scale-95"
+									class="rounded-full border-2 border-orange px-8 py-2 font-bold text-orange transition-all duration-100 ease-in hover:bg-orange hover:text-bg0 active:scale-95"
 								>
 									Live Demo
 								</button>
 								<button
-									class="rounded-full border-2 border-fg px-8 py-2 font-bold transition-all duration-150 ease-in hover:bg-fg hover:text-bg0 active:scale-95"
+									class="rounded-full border-2 border-green px-8 py-2 font-bold text-green transition-all duration-150 ease-in hover:bg-green hover:text-bg0 active:scale-95"
 								>
 									Github
 								</button>
@@ -107,52 +120,82 @@
 
 				<!-- restaurant pos -->
 				<div class="flex justify-center py-8">
-					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="flex-1">
+					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-8">
+						<div class="flex flex-1 flex-col justify-around">
 							<h3 class="text-2xl">Restaurant POS</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="block border border-black p-4">Live Demo</button>
-							<button class="block border border-black p-4">Github</button>
+							<div class="grid justify-start gap-2">
+								<button
+									class="rounded-full border-2 border-orange px-8 py-2 font-bold text-orange transition-all duration-100 ease-in hover:bg-orange hover:text-bg0 active:scale-95"
+								>
+									Live Demo
+								</button>
+								<button
+									class="rounded-full border-2 border-green px-8 py-2 font-bold text-green transition-all duration-150 ease-in hover:bg-green hover:text-bg0 active:scale-95"
+								>
+									Github
+								</button>
+							</div>
 						</div>
-						<div class="h-96 w-96 flex-1 bg-fg"></div>
+						<img class="border-fg border" src="./public/img/testScreenshot.png" alt="">
 					</div>
 				</div>
 
 				<!-- Odin book -->
 				<div class="flex justify-center py-8">
-					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="h-96 w-96 flex-1 bg-fg"></div>
-						<div class="flex-1">
+					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-8">
+						<img class="border-fg border" src="./public/img/testScreenshot.png" alt="">
+						<div class="flex flex-1 flex-col justify-around">
 							<h3 class="text-2xl">Odin Book</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="block border border-black p-4">Live Demo</button>
-							<button class="block border border-black p-4">Github</button>
+							<div class="grid justify-start gap-2">
+								<button
+									class="rounded-full border-2 border-orange px-8 py-2 font-bold text-orange transition-all duration-100 ease-in hover:bg-orange hover:text-bg0 active:scale-95"
+								>
+									Live Demo
+								</button>
+								<button
+									class="rounded-full border-2 border-green px-8 py-2 font-bold text-green transition-all duration-150 ease-in hover:bg-green hover:text-bg0 active:scale-95"
+								>
+									Github
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Spanish Pronunciation -->
 				<div class="flex justify-center py-8">
-					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-4">
-						<div class="flex-1">
+					<div class="grid max-w-6xl grid-cols-[1fr_1fr] justify-items-center gap-8">
+						<div class="flex flex-1 flex-col justify-around">
 							<h3 class="text-2xl">Spanish Pronunciation</h3>
 							<p>
 								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus temporibus
 								recusandae numquam qui, at voluptatum explicabo quae accusantium autem nemo. Numquam
 								magnam nisi corrupti ipsa, aspernatur maiores aut? Aliquid, dolore!
 							</p>
-							<button class="block border border-black p-4">Live Demo</button>
-							<button class="block border border-black p-4">Github</button>
+							<div class="grid justify-start gap-2">
+								<button
+									class="rounded-full border-2 border-orange px-8 py-2 font-bold text-orange transition-all duration-100 ease-in hover:bg-orange hover:text-bg0 active:scale-95"
+								>
+									Live Demo
+								</button>
+								<button
+									class="rounded-full border-2 border-green px-8 py-2 font-bold text-green transition-all duration-150 ease-in hover:bg-green hover:text-bg0 active:scale-95"
+								>
+									Github
+								</button>
+							</div>
 						</div>
-						<div class="h-96 w-96 flex-1 bg-fg"></div>
+						<img class="border-fg border" src="./public/img/testScreenshot.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -200,14 +243,14 @@
 	</body>
 
 	<script>
-		const frontendTab = document.getElementById("f-tab");
-		const backendTab = document.getElementById("b-tab");
-		const tablist = document.querySelector("[data-tab]");
+		const frontendTab = document.getElementById('f-tab');
+		const backendTab = document.getElementById('b-tab');
+		const tablist = document.querySelector('[data-tab]');
 		frontendTab.addEventListener('click', () => {
-			tablist.dataset.tab = "f";
+			tablist.dataset.tab = 'f';
 		});
 		backendTab.addEventListener('click', () => {
-			tablist.dataset.tab = "b";
+			tablist.dataset.tab = 'b';
 		});
 	</script>
 </html>
