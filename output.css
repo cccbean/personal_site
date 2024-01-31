@@ -1231,6 +1231,10 @@ video {
   display: flex;
 }
 
+.peer[data-tab=b] ~ .peer-data-\[tab\=b\]\:flex {
+  display: flex;
+}
+
 .peer[data-tab=b] ~ .peer-data-\[tab\=b\]\:hidden {
   display: none;
 }
