@@ -23,6 +23,7 @@
 		</div>
 
 		<!-- navbar -->
+		<!-- TODO: add scroll animation to highlight the current section in navbar -->
 		<header class="sticky top-0 z-10 bg-bg_dim">
 			<nav class="flex items-center justify-between px-8 py-2">
 				<a href="#hero">
@@ -42,48 +43,29 @@
 
 			<div class="flex justify-center py-8">
 				<div class="max-w-6xl">
-					<div class="group peer flex text-2xl" data-tab="f">
+					<div class="group peer relative flex pb-4 text-2xl" data-tab="f">
 						<!-- TODO: change tabs from data attribute to radio buttons -->
 						<!-- TODO: change to bottom border -->
-						<h3
-							class="relative flex-1 cursor-pointer rounded-t-md py-4 text-center group-data-[tab=f]:border-l group-data-[tab=f]:border-r group-data-[tab=f]:border-t group-data-[tab=f]:border-fg"
-							id="f-tab"
-						>
-							Frontend Developer
-							<div
-								class="absolute -bottom-1 hidden h-1 w-full bg-bg0 group-data-[tab=f]:block"
-							></div>
-						</h3>
-						<h3
-							class="relative flex-1 cursor-pointer rounded-t-md py-4 text-center group-data-[tab=b]:border-l group-data-[tab=b]:border-r group-data-[tab=b]:border-t group-data-[tab=b]:border-fg"
-							id="b-tab"
-						>
-							Backend Developer
-							<div
-								class="absolute -bottom-1 hidden h-1 w-full bg-bg0 group-data-[tab=b]:block"
-							></div>
-						</h3>
+						<button class="flex-1" id="f-tab">Frontend Developer</button>
+						<button class="flex-1" id="b-tab">Backend Developer</button>
+						<div class="absolute bottom-0 h-[2px] w-full bg-bg_visual"></div>
+						<div class="absolute bottom-0 h-[2px] w-1/2 bg-orange z-10 group-data-[tab=f]:translate-x-0 group-data-[tab=b]:translate-x-[100%] transition-all shadow-[0px_0px_2px_0px] shadow-orange"></div>
 					</div>
 
-					<div
-						class="flex gap-4 rounded-b-lg border border-fg p-8 peer-data-[tab=b]:rounded-tl-lg peer-data-[tab=f]:rounded-tr-lg"
-					>
-						<p class="flex-1">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima
-							necessitatibus, optio in, quisquam quos magni voluptatibus facilis vitae alias
-							similique totam soluta. Voluptatibus soluta recusandae provibg_dimdent quisquam
-							doloremque esse?
+					<div class="p-4 peer-data-[tab=f]:block peer-data-[tab=b]:hidden">
+						<p>
+							Frontend lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ab ullam quasi
+							libero modi rerum rem. Natus iste saepe aliquid maxime ipsum totam architecto libero
+							voluptatem aliquam! Quia, nemo facere!
 						</p>
-						<div class="flex-1">
-							<div>
-								Languages
-								<div>HTML</div>
-							</div>
-							<div>
-								Tools
-								<div>React</div>
-							</div>
-						</div>
+					</div>
+
+					<div class="p-4 peer-data-[tab=f]:hidden peer-data-[tab=b]:block">
+						<p>
+							Backend lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ab ullam quasi
+							libero modi rerum rem. Natus iste saepe aliquid maxime ipsum totam architecto libero
+							voluptatem aliquam! Quia, nemo facere!
+						</p>
 					</div>
 				</div>
 			</div>
@@ -236,8 +218,7 @@
 		</div>
 
 		<!-- footer -->
-				< class="absolute top-0 left-0 w-full h-full bg-red z-10"></>
-		<footer class="flex flex-col text-center bg-bg_dim">
+		<footer class="flex flex-col bg-bg_dim text-center">
 			<div>
 				<a href="">Git</a>
 				<a href="">Email</a>
